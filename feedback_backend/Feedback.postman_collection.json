@@ -1,0 +1,39 @@
+{
+	"info": {
+		"_postman_id": "dfcec3cb-0efd-42e6-b1b3-101519a58b08",
+		"name": "Feedback",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Send feedback",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\": \"Test\",\r\n    \"phone_number\": \"+7911111111\",\r\n    \"feedback_text\": \"Feedback text\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8000/api/v1/feedback",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"v1",
+						"feedback"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
